@@ -17,77 +17,17 @@ public class run {
 	final static Set<String> validInput = new HashSet<String>(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8"));
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		String input = "-1";
 		while(!input.equals("8")) {
 			input = getMenuInput();
-			switch (input) {
-			case "1": 
-				printMoviesWithStar();
-				break;
-			case "2":
-				insertStar();
-				break;
-			case "3":
-				insertCustomer();
-				break;
-			case "4":
-				deleteCustomer();
-				break;
-			case "5":
-				insertMetadata();
-				break;
-			case "6":
-				executeMySQL();
-				break;
-			case "7":
-				exitMenu();
-				break;
-			case "8":
-				System.out.println("kbaithx");
-				break;
 			
-			}
-		}		
-	}
-
-
-	private static void exitMenu() {
-		// TODO Auto-generated method stub
+		}
 		
-	}
-
-	private static void executeMySQL() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void insertMetadata() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void deleteCustomer() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void insertCustomer() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void insertStar() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void printMoviesWithStar() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	private static String getMenuInput() {
-		//makes sure that the user selects a valid input from the menu
 		Scanner s = new Scanner(System.in);
 		String input = "0";
 		while(!validInput.contains(input)) {

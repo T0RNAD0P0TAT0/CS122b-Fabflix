@@ -20,6 +20,7 @@ public class run {
 		String input = "-1";
 		while(!input.equals("8")) {
 			input = getMenuInput();
+			System.out.println(input);
 			switch (input) {
 			case "1": 
 				printMoviesWithStar();
@@ -47,9 +48,15 @@ public class run {
 				break;
 			
 			}
-		}		
+		}
+		System.out.println();
+		
 	}
 
+	private static void exitProgram() {
+		// TODO Auto-generated method stub
+		
+	}
 
 	private static void exitMenu() {
 		// TODO Auto-generated method stub

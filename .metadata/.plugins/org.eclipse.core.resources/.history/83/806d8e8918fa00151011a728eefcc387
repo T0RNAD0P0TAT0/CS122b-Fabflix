@@ -1,0 +1,38 @@
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+
+public class run {
+	final static String menu = "1 = print out the movies given a star\n" +
+			"2 = insert a new star into the database\n" +
+			"3 = insert a new customer into database\n" +
+			"4 = delete a customer from database\n" +
+			"5 = provide metadata of database\n" +
+			"6 = enter valid select/update/insert/delete SQL command\n" +
+			"7 = exit the menu\n" +
+			"8 = exit the program" +
+			"input: ";
+	final static Set<String> validInput = new HashSet<String>(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8"));
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String input = getMenuInput();
+		
+	}
+
+	private static String getMenuInput() {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		String input = "-1";
+		while(!validInput.contains(input)) {
+			System.out.println(menu);
+			input = s.next();
+			System.out.println("invalid input");
+		}
+		s.close();
+		return input;
+	}
+	
+}

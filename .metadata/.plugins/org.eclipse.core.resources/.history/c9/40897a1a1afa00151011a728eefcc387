@@ -20,6 +20,7 @@ public class run {
 		String input = "-1";
 		while(!input.equals("8")) {
 			input = getMenuInput();
+			System.out.println(input);
 			switch (input) {
 			case "1": 
 				printMoviesWithStar();
