@@ -41,6 +41,8 @@ public class run {
 					//if name is more than two words, assume is first and last
 					//if name is only one word, return those that contain the word as first or last name
 				printMoviesWithStar();
+				String first_name = "";
+				String last_name = "";
 				break;
 			case "2":
 				insertStar();

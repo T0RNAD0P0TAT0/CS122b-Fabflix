@@ -24,7 +24,6 @@ public class run {
         // Incorporate mySQL driver
         Class.forName("com.mysql.jdbc.Driver").newInstance();
 
-        //TODO ask user for db, username, and pw
          // Connect to the test database
         Connection connection = DriverManager.getConnection("jdbc:mysql:///moviedb","mytestuser", "mypassword");
 
@@ -35,42 +34,24 @@ public class run {
 			input = getMenuInput();
 			switch (input) {
 			case "1": 
-				//TODO 
-				//print out neatly, and labeled
-				//star can be queried through first name and/or last name
-					//if name is more than two words, assume is first and last
-					//if name is only one word, return those that contain the word as first or last name
 				printMoviesWithStar();
+				String first_name = "";
+				String last_name = "";
 				break;
 			case "2":
 				insertStar();
-				//TODO 
-				//if only one word, insert as last name and assign "" as first anem
 				break;
 			case "3":
 				insertCustomer();
-				//TODO
-				//do not allow insertion of a customer if credit card does not exit in cc table
-				//if customer's name is one word, just make it the last name; first name is ""
 				break;
 			case "4":
 				deleteCustomer();
-				//TODO
-				//deletion queried by credit card
 				break;
 			case "5":
 				insertMetadata();
-				//TODO print out the name of each table, and for each table, each attribute and its type
 				break;
 			case "6":
 				executeMySQL();
-				//TODO
-				/*
-				 * enter a valid select, update, insert, delete mysql query
-				 * for select, diplay the answers
-				 * for update, show how many records have changed,
-				 * for others, give enough information about status 
-				 */
 				break;
 			case "7":
 				//TODO

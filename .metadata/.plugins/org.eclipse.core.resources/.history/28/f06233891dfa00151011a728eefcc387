@@ -18,12 +18,13 @@ public class run {
 			"8 = exit the program\n" +
 			"input: ";
 	final static Set<String> validInput = new HashSet<String>(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8"));
+	
+	// Incorporate mySQL driver
+    Class.forName("com.mysql.jdbc.Driver").newInstance();
 
 	public static void main(String[] args) throws Exception {
 		
-        // Incorporate mySQL driver
-        Class.forName("com.mysql.jdbc.Driver").newInstance();
-
+        
         //TODO ask user for db, username, and pw
          // Connect to the test database
         Connection connection = DriverManager.getConnection("jdbc:mysql:///moviedb","mytestuser", "mypassword");
@@ -41,6 +42,8 @@ public class run {
 					//if name is more than two words, assume is first and last
 					//if name is only one word, return those that contain the word as first or last name
 				printMoviesWithStar();
+				String first_name = "";
+				String last_name = "";
 				break;
 			case "2":
 				insertStar();
