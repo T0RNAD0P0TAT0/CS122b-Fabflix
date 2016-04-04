@@ -1,0 +1,25 @@
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+
+public class run {
+	final String menu = "1 = first one" +
+			"2 = ";
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		
+		
+	}
+	
+	private String getMenuInput() {
+		Set<String> h = new HashSet<String>(Arrays.asList("a", "b"));
+		Scanner s = null;
+		s = new Scanner(System.in);
+	
+		s.close();
+		return null;
+	}
+}

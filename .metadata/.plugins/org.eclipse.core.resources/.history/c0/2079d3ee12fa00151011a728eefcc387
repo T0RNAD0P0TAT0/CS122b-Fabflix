@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class run {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final String menu = "1 = go back to menu" +
+				"2 = ";
+		
+		
+		
+	}
+	
+	private String getInput() {
+		Scanner s = null;
+		s = new Scanner(System.in);
+		HashSet<String> possibleInput = new HashSet<String>();
+		s.close();
+		return null;
+	}
+}
