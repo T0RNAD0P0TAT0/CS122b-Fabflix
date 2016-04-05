@@ -164,9 +164,9 @@ public class run {
             	//then do insert
             	Statement insertCustomer = connection.createStatement();
             	//TODO see what it actually returns
-            	int retID = insertCustomer.executeUpdate(String.format("insert into stars (first_name, last_name, cc_id, address, email, password)" +
+            	int customerID = insertCustomer.executeUpdate(String.format("insert into customers (first_name, last_name, cc_id, address, email, password)" +
                			"values ('%s', '%s', '%d', '%s', '%s', '%s')", first_name, last_name, cc_id, address, email, password));
-            	System.out.println("Entered star into database with ID " + Integer.toString(retID));
+            	System.out.println("Entered customer into database with ID " + Integer.toString(customerID));
             
             	
             }
