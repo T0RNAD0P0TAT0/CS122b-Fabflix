@@ -167,8 +167,7 @@ public class run {
             	int customerID = insertCustomer.executeUpdate(String.format("insert into customers (first_name, last_name, cc_id, address, email, password)" +
                			"values ('%s', '%s', '%d', '%s', '%s', '%s')", first_name, last_name, cc_id, address, email, password));
             	System.out.println("Entered customer into database with ID " + Integer.toString(customerID));
-            
-            	
+   	
             }
             else if (input.equals("4"))
             {
